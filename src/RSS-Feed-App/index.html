@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app" class="container">
+        <h1>{{ title }}</h1>
+        <add-item @submitted="addFeed($event)"></add-item>
+        <ul class="list-group mb-2"> <transition-group name="list">
+            <li class="list-group-item" v-for="(feed, index) in filteredFeeds" v-bind:key="feed.id">
+                <div class="form-check">
+                  <label class="form-check-label" :for="'feed' + index">
+                    {{ feed.title }}
+                    <br/>
+                    <small>{{feed.url}}</small>
+                    <br/>
+                    <small>{{feed.created | friendly-date}}</small>
+                </label>
+                </div>
+              </li>
+            </transition-group>
+        </ul>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
