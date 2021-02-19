@@ -3,14 +3,14 @@ import Oidc from 'oidc-client';
 var mgr = new Oidc.UserManager({
     authority: 'https://localhost:5443',
     client_id: 'js',
-    redirect_uri: 'https://localhost:5000/callback',
-    response_type: 'id_token token',
+    redirect_uri: 'https://localhost:5000/callback.html',
+    response_type: 'code',
     scope: 'openid profile api1',
     post_logout_redirect_uri: 'https://localhost:5000/',
     userStore: new Oidc.WebStorageStateStore({ store: window.localStorage }),
 
     automaticSilentRenew: true,
-    silent_redirect_uri: 'https://localhost:5000/static/silent-renew.html',
+    silent_redirect_uri: 'https://localhost:5000/silent-renew.html',
     accessTokenExpiringNotificationTime: 10,
     //   filterProtocolClaims: true,
     //   loadUserInfo: true

@@ -87,8 +87,10 @@ namespace VueIdentity.Configuration
                 {
                     ClientId = "js",
                     ClientName = "VueApi  JavaScript Client",
-                    AllowedGrantTypes = GrantTypes.Implicit,
+                    AllowedGrantTypes = GrantTypes.Code,
                     AllowAccessTokensViaBrowser = true,
+                    RequirePkce =  true,
+                    RequireClientSecret = false,
 
                     AllowOfflineAccess = true,
                     AccessTokenLifetime = 90, // 1.5 minutes
@@ -100,10 +102,15 @@ namespace VueIdentity.Configuration
 
                     RedirectUris = 
                     {
-                        "https://localhost:5000/callback",
-                        "https://localhost:5000/static/silent-renew.html"
+                        "https://localhost:5000",
+                        "https://localhost:5000/callback.html",
+                        "https://localhost:5000/silent-renew.html"
                     },
-                    PostLogoutRedirectUris = { "https://localhost:5000" },
+                    PostLogoutRedirectUris = 
+                    { 
+                        "https://localhost:5000",
+                        "https://localhost:5000/"
+                    },
                     AllowedCorsOrigins =     { "https://localhost:5000" },
 
                     AllowedScopes =
