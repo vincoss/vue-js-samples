@@ -48,6 +48,7 @@ export default router;
 
 router.beforeEach(async (to, from, next) => {
   let app = router.app.$data || {isAuthenticated: false}
+
   if (app.isAuthenticated) {
     //already signed in, we can navigate anywhere
     next()

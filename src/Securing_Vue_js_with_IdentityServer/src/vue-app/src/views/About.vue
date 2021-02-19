@@ -6,6 +6,7 @@
     </div>
     <button @click="callApi">Call API</button>
     <button @click="callSecureApi">Call Secure API</button>
+    <button @click="clearData">Clear</button>
     <div v-for="service in services" :key="service.iconUri">
       <p>
         <img :src="service.iconUri" />
@@ -41,6 +42,10 @@ export default {
       } catch (err) {
         console.log('secure api call failed');
       }
+    },
+    clearData()
+    {
+      this.services = [];
     }
   }
 }

@@ -3,6 +3,8 @@ import App from './App.vue'
 import router from './router'
 import mgr from './services/security.js'
 import axios from 'axios'
+import LocalStorageService from "./services/LocalStorageService.js";
+const localStorageService = LocalStorageService.getService();
 
 Vue.config.productionTip = false
 
@@ -33,7 +35,14 @@ const globalMethods = {
   signIn (returnPath) {
     returnPath ? this.mgr.signinRedirect({ state: returnPath })
         : this.mgr.signinRedirect();
-  }
+  },
+  logout () {
+    try {
+      return this.mgr.signoutRedirect();
+    } catch (err) {
+      console.log(err);
+    }
+  },
 }
 
 let v = new Vue({
@@ -44,6 +53,7 @@ let v = new Vue({
 }).$mount('#app')
 
 axios.interceptors.request.use((config) => {
+
   const user = v.$root.user;
   if (user) {
     const authToken = user.access_token;
@@ -55,4 +65,28 @@ axios.interceptors.request.use((config) => {
 },
 (err) => {
   //What do we do when we get errors?
+});
+
+//Add a response interceptor
+
+axios.interceptors.response.use((response) => {
+  return response
+}, function (error) {
+  const originalRequest = error.config;
+
+  if (error.response.status === 401 && originalRequest.url === 'https://localhost:5443')
+  {
+    router.push('/login');
+    return Promise.reject(error);
+  }
+
+  if (error.response.status === 401 && !originalRequest._retry) {
+
+      originalRequest._retry = true;
+      console.log('renewing tokens');
+      new Oidc.UserManager({userStore: new Oidc.WebStorageStateStore({ store: window.localStorage })})
+          .signinSilentCallback();
+          return axios(originalRequest);
+  }
+  return Promise.reject(error);
 });
