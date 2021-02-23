@@ -1,6 +1,6 @@
 import { UserManager, WebStorageStateStore, User } from 'oidc-client';
 
-export default class AuthService {
+export default class AuthenticationService {
     private userManager: UserManager;
 
     constructor() {

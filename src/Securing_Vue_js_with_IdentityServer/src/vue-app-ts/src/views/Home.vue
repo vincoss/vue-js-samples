@@ -20,41 +20,49 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
-import AuthService from '@/services/auth.service';
-import axios from 'axios';
+    import { Component, Vue } from 'vue-property-decorator';
+    import { IApplicationContext } from "@/services/ApplicationContext";
+    import AuthenticationService from '@/services/AuthenticationService';
+    import axios from 'axios';
 
-const auth = new AuthService();
+    const auth = new AuthenticationService();
 
-@Component({
-  components: {
-  },
-})
+    @Component({
+        components: {
+        },
+    })
 
- export default class Home extends Vue {
+    export default class Home extends Vue
+    {
         public currentUser: string = "";
         public accessTokenExpired: boolean | undefined = false;
         public isLoggedIn: boolean = false;
+        public $api!: IApplicationContext;
 
         public values: [] = [];
         public services: [] = [];
 
-        get username(): string {
+        get username(): string
+        {
             return this.currentUser;
         }
 
-        public login() {
+        public login()
+        {
             auth.login();
         }
 
-        public logout() {
+        public logout()
+        {
             auth.logout();
         }
 
-        public mounted() {
-            auth.getUser().then((user) => {
-                if (user) {
+        public mounted()
+        {
+            auth.getUser().then((user) =>
+            {
+                if (user)
+                {
                     this.currentUser = user.profile.name!;
                     this.accessTokenExpired = user.expired;
                     this.isLoggedIn = (user !== null && !user.expired);
@@ -65,28 +73,44 @@ const auth = new AuthService();
         public getUnProtectedApiData() 
         {
             axios.get('https://localhost:5000/api/values')
-                    .then((response: any) => {
-                        this.values = response.data;
-                    })
-                    .catch((error: any) => {
-                        alert(error);
-                    });
+            .then((response: any) =>
+            {
+                this.values = response.data;
+            })
+            .catch((error: any) =>
+            {
+                alert(error);
+            });
         }
 
-        public getProtectedApiData() {
-
-            const authorizationHeader = 'Authorization';
-            auth.getAccessToken().then((userToken: string) => {
-                axios.defaults.headers.common[authorizationHeader] = `Bearer ${userToken}`;
-
-                axios.get('https://localhost:5000/api/secured')
-                    .then((response: any) => {
-                        this.services = response.data;
-                    })
-                    .catch((error: any) => {
-                        alert(error);
-                    });
+        public getProtectedApiData()
+        {
+            this.$api.Secured.get()
+            .then((response: any) =>
+            {
+                this.values = response;
+            })
+            .catch((error: any) =>
+            {
+                alert(error);
             });
+
+
+            //const authorizationHeader = 'Authorization';
+            //auth.getAccessToken().then((userToken: string) =>
+            //{
+            //    axios.defaults.headers.common[authorizationHeader] = `Bearer ${userToken}`;
+
+            //    axios.get('https://localhost:5000/api/secured')
+            //        .then((response: any) =>
+            //        {
+            //            this.services = response.data;
+            //        })
+            //        .catch((error: any) =>
+            //        {
+            //            alert(error);
+            //        });
+            //});
         }
 
         public clearData()

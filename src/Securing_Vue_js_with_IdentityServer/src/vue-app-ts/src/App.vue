@@ -30,3 +30,55 @@
   color: #42b983;
 }
 </style>
+
+
+<script lang="ts">
+    import { Component, Vue } from "vue-property-decorator";
+    import { IApplicationContext } from "@/services/ApplicationContext";
+    import AuthenticationService from "@/services/AuthenticationService";
+    import Tokens from '@/services/Tokens';
+
+    const auth = new AuthenticationService();
+    const tokens = Tokens.getInstance();
+
+    @Component
+    export default class Home extends Vue
+    {
+        public $api!: IApplicationContext;
+        private isLoading = false;
+
+        ensureUser(): void
+        {
+            auth.getUser().then((user) =>
+            {
+                if (user)
+                {
+                    tokens.setAccessToken(user.access_token);
+
+                    //this.currentUser = user.profile.name!;
+                    //this.accessTokenExpired = user.expired;
+                    //this.isLoggedIn = (user !== null && !user.expired);
+                }
+                else
+                {
+                    auth.login();
+                }
+            });
+        }
+
+        isLoadingCallback(loading: boolean): void
+        {
+            this.isLoading = loading;
+        }
+
+        created()
+        {
+        }
+
+        mounted()
+        {
+            this.ensureUser();
+            this.$api.RequestHandler.isLoadingCallback(this.isLoadingCallback);
+        }
+    }
+</script>
