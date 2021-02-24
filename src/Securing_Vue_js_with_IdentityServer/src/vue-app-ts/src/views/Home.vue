@@ -23,7 +23,6 @@
     import { Component, Vue } from 'vue-property-decorator';
     import { IApplicationContext } from "@/services/ApplicationContext";
     import AuthenticationService from '@/services/AuthenticationService';
-    import axios from 'axios';
 
     const auth = new AuthenticationService();
 
@@ -72,7 +71,7 @@
 
         public getUnProtectedApiData() 
         {
-            axios.get('https://localhost:5000/api/values')
+            this.$api.Values.get()
             .then((response: any) =>
             {
                 this.values = response.data;
@@ -94,23 +93,6 @@
             {
                 alert(error);
             });
-
-
-            //const authorizationHeader = 'Authorization';
-            //auth.getAccessToken().then((userToken: string) =>
-            //{
-            //    axios.defaults.headers.common[authorizationHeader] = `Bearer ${userToken}`;
-
-            //    axios.get('https://localhost:5000/api/secured')
-            //        .then((response: any) =>
-            //        {
-            //            this.services = response.data;
-            //        })
-            //        .catch((error: any) =>
-            //        {
-            //            alert(error);
-            //        });
-            //});
         }
 
         public clearData()

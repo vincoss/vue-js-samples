@@ -6,7 +6,7 @@ import { ApplicationContext } from "./services/ApplicationContext";
 Vue.config.productionTip = false
 Vue.prototype.$api = new ApplicationContext(router);
 
-let v = new Vue({
+new Vue({
     router,
     render: h => h(App)
 }).$mount('#app')

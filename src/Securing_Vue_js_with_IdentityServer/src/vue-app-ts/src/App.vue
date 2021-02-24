@@ -36,10 +36,10 @@
     import { Component, Vue } from "vue-property-decorator";
     import { IApplicationContext } from "@/services/ApplicationContext";
     import AuthenticationService from "@/services/AuthenticationService";
-    import Tokens from '@/services/Tokens';
+    import UserStore from '@/services/Tokens';
 
     const auth = new AuthenticationService();
-    const tokens = Tokens.getInstance();
+    const tokens = UserStore.getInstance();
 
     @Component
     export default class Home extends Vue
@@ -54,10 +54,6 @@
                 if (user)
                 {
                     tokens.setAccessToken(user.access_token);
-
-                    //this.currentUser = user.profile.name!;
-                    //this.accessTokenExpired = user.expired;
-                    //this.isLoggedIn = (user !== null && !user.expired);
                 }
                 else
                 {

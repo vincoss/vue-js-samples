@@ -1,7 +1,10 @@
-// Parts of this taken from https://laptrinhx.com/how-does-axios-cancel-duplicate-requests-253816797/
+//Parts of this taken from https://laptrinhx.com/how-does-axios-cancel-duplicate-requests-253816797/
 
 import axios, { AxiosInstance, AxiosRequestConfig } from "axios";
+import AuthenticationService from "@/services/AuthenticationService";
 import Tokens from '@/services/Tokens';
+
+const auth = new AuthenticationService();
 const tokens = Tokens.getInstance();
 
 export default class RequestHandler
@@ -25,31 +28,7 @@ export default class RequestHandler
         this.Axios.interceptors.request.use(
             config =>
             {
-
-                var token = tokens.getAccessToken();
-
-                config.headers.common['Authorization'] = 'Bearer ' + token;
-
-                //auth.getAccessToken().then((userToken: string) =>
-                //{
-                //    alert('in');
-                //    config.headers.common['Authorization'] = 'Bearer ' + userToken;
-                //});
-
-                //const usera = this.$root.$data;
-                //if (usera)
-                //{
-                //    const authToken = usera.access_token;
-                //    if (authToken)
-                //    {
-                //        config.headers.Authorization = `Bearer ${authToken}`;
-                //    }
-                //}
-
-
-                //this.ensureAuthHeader(config);
-                //config.headers.authorization = 'secret token';
-                //alert(config.headers.Authorization);
+                this.ensureAuthorizationHeader(config);
                 this.addToRequestCount();
                 this.removePending(config, true); // check and cancel the previous request before the request starts
                 this.addPending(config); // add the current request to pending
@@ -74,6 +53,7 @@ export default class RequestHandler
             {
                 //todo: remove from pending?
                 this.subtractFromRequestCount();
+                this.ensureAuthentication(error);
                 return Promise.reject(error);
             }
         );
@@ -147,13 +127,20 @@ export default class RequestHandler
         }
     }
 
-    async ensureAuthHeader(config: AxiosRequestConfig)
+    ensureAuthorizationHeader(config: AxiosRequestConfig)
     {
-        await auth.getAccessToken().then((userToken: string) =>
+        var token = tokens.getAccessToken();
+        if (token)
         {
-            const headers = { Authorization: `Bearer ${userToken}` };
-            config.headers = headers;
-            //config.headers.common['Authorization'] = 'Bearer ' + userToken;
-        });
+            config.headers.common['Authorization'] = 'Bearer ' + token;
+        }
+    }
+
+    ensureAuthentication(error: any)
+    {
+        if (error != null && error.response.status === 401)
+        {
+            auth.login();
+        }
     }
 }

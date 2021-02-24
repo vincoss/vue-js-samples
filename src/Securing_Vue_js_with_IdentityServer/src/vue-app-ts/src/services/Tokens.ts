@@ -1,12 +1,15 @@
 import Storage from '@/services/LocalStorageService';
+import { User } from 'oidc-client';
 
 enum Locals
 {
     ACCESS_TOKEN = 'access_token',
-    REFRESH_TOKEN = 'refresh_token'
+    REFRESH_TOKEN = 'refresh_token',
+    USER = 'user'
 }
 
-export default class Tokens extends Storage<Locals> {
+export default class Tokens extends Storage<Locals>
+{
     private static instance?: Tokens;
 
     private constructor()
@@ -22,6 +25,21 @@ export default class Tokens extends Storage<Locals> {
         }
 
         return this.instance;
+    }
+
+    public getUser(): User | null
+    {
+        var user = this.get(Locals.USER);
+        if (user)
+        {
+            return JSON.parse(user) as User;
+        }
+        return null;
+    }
+
+    public setUser(user: User)
+    {
+        this.set(Locals.USER, JSON.stringify(user));
     }
 
     public getAccessToken()
@@ -46,6 +64,6 @@ export default class Tokens extends Storage<Locals> {
 
     public clear()
     {
-        this.clearItems([Locals.ACCESS_TOKEN, Locals.REFRESH_TOKEN]);
+        this.clearItems([Locals.ACCESS_TOKEN, Locals.REFRESH_TOKEN, Locals.USER]);
     }
 }
