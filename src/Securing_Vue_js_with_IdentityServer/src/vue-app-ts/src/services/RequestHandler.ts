@@ -138,8 +138,10 @@ export default class RequestHandler
 
     ensureAuthentication(error: any)
     {
-        if (error != null && error.response.status === 401)
+        let originalRequest = error.config
+        if (error != null && error.response.status === 401 && !originalRequest._retry)
         {
+            originalRequest._retry = true // now it can be retried 
             auth.login();
         }
     }

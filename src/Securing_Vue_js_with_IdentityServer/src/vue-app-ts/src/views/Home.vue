@@ -74,7 +74,7 @@
             this.$api.Values.get()
             .then((response: any) =>
             {
-                this.values = response.data;
+                this.values = response;
             })
             .catch((error: any) =>
             {
@@ -87,7 +87,7 @@
             this.$api.Secured.get()
             .then((response: any) =>
             {
-                this.values = response;
+                this.services = response;
             })
             .catch((error: any) =>
             {

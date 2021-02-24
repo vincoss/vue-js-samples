@@ -8,6 +8,7 @@ https://github.com/IdentityModel/oidc-client-js
 http://docs.identityserver.io/en/latest/quickstarts/community.html
 https://www.richard-banks.org/2018/11/securing-vue-with-identityserver-part2.html
 https://medium.com/swlh/handling-access-and-refresh-tokens-using-axios-interceptors-3970b601a5da
+https://medium.com/better-programming/creating-localstorage-wrapper-with-typescript-7ff6b71b35cb
 
 ## Exeptions
 System.ArgumentException: The 'ClientId' option must be provided. (Parameter 'ClientId')
