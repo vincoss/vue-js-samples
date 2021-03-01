@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Services\WorkingWithWebview.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -132,5 +133,8 @@
       <Project>{ACAF89D7-B483-46D3-ACDC-C15E881AA340}</Project>
       <Name>Vuejs_XF_App</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\wwwroot\" />
   </ItemGroup>
 </Project>
