@@ -131,6 +131,12 @@
     <Content Include="Assets\Wide310x150Logo.scale-100.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
+    <Content Include="Assets\wwwroot\favicon.ico" />
+    <Content Include="Assets\wwwroot\img\logo.82b9c7a5.png" />
+    <Content Include="Assets\wwwroot\index.html" />
+    <Content Include="Assets\wwwroot\js\about.js" />
+    <Content Include="Assets\wwwroot\js\app.js" />
+    <Content Include="Assets\wwwroot\js\chunk-vendors.js" />
     <Content Include="Properties\Default.rd.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -154,9 +160,7 @@
       <Name>Vuejs_XF_App</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Assets\wwwroot\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
