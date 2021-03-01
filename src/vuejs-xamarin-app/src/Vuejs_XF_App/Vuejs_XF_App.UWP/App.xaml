@@ -1,0 +1,7 @@
+﻿<Application
+    x:Class="Vuejs_XF_App.UWP.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Vuejs_XF_App.UWP">
+
+</Application>

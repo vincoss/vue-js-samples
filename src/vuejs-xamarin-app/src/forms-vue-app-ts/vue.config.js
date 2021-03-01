@@ -1,3 +1,5 @@
 module.exports = {
-  outputDir: '../vueApi/wwwroot'
+    outputDir: '../vueApi/wwwroot',
+    assetsDir: '',
+    publicPath: '',
 }
