@@ -37,6 +37,12 @@ namespace Vuejs_XF_App.Views
 
             htmlSource.BaseUrl = DependencyService.Get<IBaseUrl>().Get();
             webViewHtmlString.Source = htmlSource;
+            webViewHtmlString.Navigated += WebViewHtmlString_Navigated;
+        }
+
+        private void WebViewHtmlString_Navigated(object sender, WebNavigatedEventArgs e)
+        {
+            lblError.Text = e.Result.ToString();
         }
     }
 }

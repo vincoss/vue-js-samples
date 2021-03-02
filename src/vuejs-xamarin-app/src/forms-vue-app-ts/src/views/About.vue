@@ -20,7 +20,7 @@ export default {
   methods: {
     async callApi() {
       try {
-        const response = await axios.get("https://localhost:5001/api/values");
+          const response = await axios.get("http://localhost:5000/api/values");
         this.values = response.data;
       } catch (err) {
         this.values.push("Ooops!" + err);

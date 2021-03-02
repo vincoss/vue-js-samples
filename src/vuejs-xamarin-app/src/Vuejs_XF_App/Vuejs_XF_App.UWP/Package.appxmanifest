@@ -7,7 +7,7 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="9e34ff8f-b664-42a7-bc2b-03bcf83b0858"
+    Name="com.vuejsxfsample"
     Publisher="CN=4002cf8a-8d5c-4d67-a969-76af12692ec4"
     Version="1.0.0.0" />
 
