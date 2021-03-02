@@ -3,8 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Vuejs_XF_App.MainPage">
 
-    <StackLayout>
-        <Button Text="Vue.js APP" Clicked="Button_Clicked"/>
-    </StackLayout>
+    <ScrollView>
+        <StackLayout>
+            <Button Text="Vue.js APP" Clicked="Button_Clicked"/>
+            <Button Text="Http - Get Values Test" x:Name="httpGetValuesTest" Clicked="httpGetValuesTest_Clicked"/>
+            <Button Text="Https - Get Values Test" x:Name="httpsGetValuesTest" Clicked="httpsGetValuesTest_Clicked"/>
+            <Label x:Name="lblInfo"/>
+        </StackLayout>
+    </ScrollView>
 
 </ContentPage>
