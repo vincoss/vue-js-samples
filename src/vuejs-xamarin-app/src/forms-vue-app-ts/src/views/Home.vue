@@ -26,12 +26,14 @@ export default {
         },
         methods: {
             async callApi() {
-                try {
-                    const response = await axios.get("http://localhost:5000/api/values");
-                    this.values = response.data;
-                } catch (err) {
-                    this.values.push("Ooops!" + err);
-                }
+                const response = await axios.get("http://localhost:5000/api/values");
+                this.values = response.data;
+                //try {
+                //    const response = await axios.get("http://localhost:5000/api/values");
+                //    this.values = response.data;
+                //} catch (err) {
+                //    this.values.push("Ooops!" + err);
+                //}
             }
         }
 }

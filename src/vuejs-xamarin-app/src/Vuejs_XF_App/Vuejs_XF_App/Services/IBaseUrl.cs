@@ -4,5 +4,10 @@ using System.Text;
 
 namespace Vuejs_XF_App.Services
 {
-    public interface IBaseUrl { string Get(); }
+    public interface IBaseUrl 
+    { 
+        string Get();
+        //string GetContent(string filePath);
+    }
+
 }

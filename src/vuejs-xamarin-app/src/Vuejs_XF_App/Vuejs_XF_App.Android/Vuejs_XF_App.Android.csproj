@@ -87,7 +87,6 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets\wwwroot\" />
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
@@ -95,6 +94,24 @@
       <Project>{ACAF89D7-B483-46D3-ACDC-C15E881AA340}</Project>
       <Name>Vuejs_XF_App</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\wwwroot\favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\wwwroot\img\logo.82b9c7a5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\wwwroot\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\wwwroot\js\about.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\wwwroot\js\app.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\wwwroot\js\chunk-vendors.js" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

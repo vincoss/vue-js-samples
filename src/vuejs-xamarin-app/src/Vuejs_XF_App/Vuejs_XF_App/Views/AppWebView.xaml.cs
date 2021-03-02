@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,8 +22,10 @@ namespace Vuejs_XF_App.Views
 
         private void HtmlSource()
         {
+            var webRootPath = DependencyService.Get<IBaseUrl>().Get();
             var htmlSource = new HtmlWebViewSource();
 
+            htmlSource.BaseUrl = webRootPath;
             htmlSource.Html = @"<html>
                                 <head>
                                 <link rel=""stylesheet"" href=""site.css"">
@@ -35,7 +38,7 @@ namespace Vuejs_XF_App.Views
                                 </body>
                                 </html>";
 
-            htmlSource.BaseUrl = DependencyService.Get<IBaseUrl>().Get();
+
             webViewHtmlString.Source = htmlSource;
             webViewHtmlString.Navigated += WebViewHtmlString_Navigated;
         }
@@ -43,6 +46,42 @@ namespace Vuejs_XF_App.Views
         private void WebViewHtmlString_Navigated(object sender, WebNavigatedEventArgs e)
         {
             lblError.Text = e.Result.ToString();
+        }
+
+        private async void bntCalculate_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                var number = 4;
+                string result = await webViewHtmlString.EvaluateJavaScriptAsync($"factorial({number})");
+                if(string.IsNullOrWhiteSpace(result))
+                {
+                    result = "Empty result. Possible error";
+                }
+                lblError.Text = result;
+            }
+            catch(Exception ex)
+            {
+                lblError.Text = ex.ToString();
+            }
+        }
+    }
+
+    public class Constants
+    {
+        public static string GetAppRootPath()
+        {
+            return Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+        }
+
+        public static string GetWebRoot()
+        {
+            return Path.Combine(GetAppRootPath(), "assets", "wwwroot");
+        }
+
+        public static string GetWebIndexPage()
+        {
+            return Path.Combine(GetWebRoot(), "index.htnl");
         }
     }
 }

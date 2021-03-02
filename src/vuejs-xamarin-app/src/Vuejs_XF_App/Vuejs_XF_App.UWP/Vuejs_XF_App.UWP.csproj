@@ -137,6 +137,7 @@
     <Content Include="Assets\wwwroot\js\about.js" />
     <Content Include="Assets\wwwroot\js\app.js" />
     <Content Include="Assets\wwwroot\js\chunk-vendors.js" />
+    <Content Include="Assets\wwwroot\XamarinLogo.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Readme.txt" />
   </ItemGroup>

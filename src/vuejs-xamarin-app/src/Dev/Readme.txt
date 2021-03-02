@@ -20,3 +20,11 @@ yarn add axios
 
 # configure
 vue ui
+
+
+## Network erros
+On app if there is an network error then check cors header.
+
+## Resources
+https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/webview?tabs=windows#invoking-javascript
+https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/custom-renderer/hybridwebview
