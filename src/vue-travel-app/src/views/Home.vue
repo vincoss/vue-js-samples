@@ -1,0 +1,60 @@
+<template>
+  <div class="home">
+    <div class="navigation">
+      <h1>All Destinations</h1>
+      <div class="destinations">
+        <div v-for="destination in destinations" :key="destination.name">
+          <router-link :to="{name: 'DestinationDetails', params: {id: destination.id}}">
+            <h2>{{ destination.name }}</h2>
+          </router-link>
+          <figure>
+            <router-link :to="{name: 'DestinationDetails', params: {id: destination.id}}">
+              <img
+                :src="require(`@/assets/${destination.image}`)"
+                :alt="destination.name"
+              />
+            </router-link>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+// @ is an alias to /src
+import store from "@/store.js";
+
+export default {
+  name: "Home",
+  components: {},
+  data() {
+    return {
+      destinations: store.destinations
+    };
+  }
+};
+</script>
+<style scoped>
+.navigation {
+  max-width: 1400px;
+  max-width: 0 auto;
+}
+img {
+  max-width: 200px;
+}
+.destinations {
+  display: flex;
+  justify-content: space-between;
+}
+
+a{
+  color: lightseagreen;
+  text-decoration: none;
+}
+
+a:hover,
+a:visited{
+  text-decoration: underline;
+}
+</style>
