@@ -44,8 +44,12 @@
 </template>
 <script>
 import store from "@/store";
+import GoBack from "@/components/GoBack"
+
 export default {
-  components: {},
+  components: {
+    GoBack
+  },
   data() {
     return {};
   },
