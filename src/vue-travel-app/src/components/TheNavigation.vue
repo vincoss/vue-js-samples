@@ -43,39 +43,38 @@ export default {
 };
 </script>
 
+
 <style scoped>
 #nav {
-  padding: 30px;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: 1px solid grey;
+  z-index: 1;
 }
-
 #nav a {
-  font-weight: bold;
   color: #2c3e50;
-  padding: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
 }
-
-#nav a.default-active-link {
-  color: #42b983;
+#nav a.vue-school-active-class {
+  color: #ab26ab;
 }
-
 .nav-links {
   display: flex;
 }
-
 .links {
   padding-right: 20px;
   list-style: none;
 }
-
-.inks:hover {
+.links:hover {
   text-decoration: underline;
 }
-
 .logo {
   font-size: 20px;
-  color: orange;
+  color: purple;
   font-weight: bold;
 }
 </style>
