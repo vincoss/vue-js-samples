@@ -1,24 +1,21 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <a href="/">a tag</a> |
-      <TheNavigation/>
+      <router-link to="/">Home</router-link> | <a href="/">a tag</a> |
+      <TheNavigation />
     </div>
     <router-view :key="$route.path" />
   </div>
 </template>
 
 <script>
-
-import TheNavigation from "@/components/TheNavigation"
+import TheNavigation from "@/components/TheNavigation";
 
 export default {
-  components:
-  {
+  components: {
     TheNavigation
   }
-}
+};
 </script>
 
 <style>
@@ -29,5 +26,4 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-
 </style>

@@ -21,6 +21,8 @@ yarn add axios
 # configure
 vue ui
 
+# run --fix
+npx vue-cli-service lint --fix
 
 ## Network erros
 On app if there is an network error then check cors header.
