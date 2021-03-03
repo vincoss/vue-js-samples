@@ -25,6 +25,14 @@ vue ui
 ## Network erros
 On app if there is an network error then check cors header.
 
+## Tools
+Chrome Vue.js devtools
+Firefox Vue.js devtools
+
+VS Code
+VS Code Vetur Extension
+VS Code Vue VS Code Extension Pack
+
 ## Resources
 https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/webview?tabs=windows#invoking-javascript
 https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/custom-renderer/hybridwebview
