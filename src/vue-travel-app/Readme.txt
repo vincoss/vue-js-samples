@@ -10,3 +10,5 @@ vue ui
 
 ## Resources
 https://vueschool.io/lessons/vuejs-router-creating-routes
+https://github.com/vueschool/vuejs-router
+https://github.com/vueschool
