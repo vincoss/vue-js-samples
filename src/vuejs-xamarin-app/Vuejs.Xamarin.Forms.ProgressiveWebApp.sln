@@ -13,27 +13,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VueApi", "src\VueApi\VueApi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dev", "src\Dev\Dev.csproj", "{B44868D0-C5FA-4875-A631-0E07D6EF0AD6}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "forms-vue-app-ts", "src\forms-vue-app-ts\", "{E224A143-91F6-44CE-8165-D681E5E8D18A}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_63836"
-		Debug.AspNetCompiler.PhysicalPath = "src\forms-vue-app-ts\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63836\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_63836"
-		Release.AspNetCompiler.PhysicalPath = "src\forms-vue-app-ts\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63836\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "63836"
-		SlnRelativePath = "src\forms-vue-app-ts\"
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vuejs_XF_App.UWP", "src\Vuejs_XF_App\Vuejs_XF_App.UWP\Vuejs_XF_App.UWP.csproj", "{9D670E12-A8FA-47D9-936D-171E366A482E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vuejs_XF_App.Android", "src\Vuejs_XF_App\Vuejs_XF_App.Android\Vuejs_XF_App.Android.csproj", "{52DF4948-E6A9-4113-99DC-DFB8F8A27E7D}"
@@ -61,6 +40,27 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "vuejs-default", "src\vuejs-
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "59528"
 		SlnRelativePath = "src\vuejs-default\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "vuejs-forms-app-ts", "src\vuejs-forms-app-ts\", "{5AD5E201-A8D4-44EB-B96D-EAB8CAAD8148}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_63423"
+		Debug.AspNetCompiler.PhysicalPath = "src\vuejs-forms-app-ts\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63423\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_63423"
+		Release.AspNetCompiler.PhysicalPath = "src\vuejs-forms-app-ts\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63423\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "63423"
+		SlnRelativePath = "src\vuejs-forms-app-ts\"
 	EndProjectSection
 EndProject
 Global
@@ -127,30 +127,6 @@ Global
 		{B44868D0-C5FA-4875-A631-0E07D6EF0AD6}.Release|x64.Build.0 = Release|Any CPU
 		{B44868D0-C5FA-4875-A631-0E07D6EF0AD6}.Release|x86.ActiveCfg = Release|Any CPU
 		{B44868D0-C5FA-4875-A631-0E07D6EF0AD6}.Release|x86.Build.0 = Release|Any CPU
-		{E224A143-91F6-44CE-8165-D681E5E8D18A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E224A143-91F6-44CE-8165-D681E5E8D18A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E224A143-91F6-44CE-8165-D681E5E8D18A}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{E224A143-91F6-44CE-8165-D681E5E8D18A}.Debug|ARM.Build.0 = Debug|Any CPU
-		{E224A143-91F6-44CE-8165-D681E5E8D18A}.Debug|iPhone.ActiveCfg = Debug|Any CPU
-		{E224A143-91F6-44CE-8165-D681E5E8D18A}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{E224A143-91F6-44CE-8165-D681E5E8D18A}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{E224A143-91F6-44CE-8165-D681E5E8D18A}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
-		{E224A143-91F6-44CE-8165-D681E5E8D18A}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{E224A143-91F6-44CE-8165-D681E5E8D18A}.Debug|x64.Build.0 = Debug|Any CPU
-		{E224A143-91F6-44CE-8165-D681E5E8D18A}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{E224A143-91F6-44CE-8165-D681E5E8D18A}.Debug|x86.Build.0 = Debug|Any CPU
-		{E224A143-91F6-44CE-8165-D681E5E8D18A}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{E224A143-91F6-44CE-8165-D681E5E8D18A}.Release|Any CPU.Build.0 = Debug|Any CPU
-		{E224A143-91F6-44CE-8165-D681E5E8D18A}.Release|ARM.ActiveCfg = Debug|Any CPU
-		{E224A143-91F6-44CE-8165-D681E5E8D18A}.Release|ARM.Build.0 = Debug|Any CPU
-		{E224A143-91F6-44CE-8165-D681E5E8D18A}.Release|iPhone.ActiveCfg = Debug|Any CPU
-		{E224A143-91F6-44CE-8165-D681E5E8D18A}.Release|iPhone.Build.0 = Debug|Any CPU
-		{E224A143-91F6-44CE-8165-D681E5E8D18A}.Release|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{E224A143-91F6-44CE-8165-D681E5E8D18A}.Release|iPhoneSimulator.Build.0 = Debug|Any CPU
-		{E224A143-91F6-44CE-8165-D681E5E8D18A}.Release|x64.ActiveCfg = Debug|Any CPU
-		{E224A143-91F6-44CE-8165-D681E5E8D18A}.Release|x64.Build.0 = Debug|Any CPU
-		{E224A143-91F6-44CE-8165-D681E5E8D18A}.Release|x86.ActiveCfg = Debug|Any CPU
-		{E224A143-91F6-44CE-8165-D681E5E8D18A}.Release|x86.Build.0 = Debug|Any CPU
 		{9D670E12-A8FA-47D9-936D-171E366A482E}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{9D670E12-A8FA-47D9-936D-171E366A482E}.Debug|ARM.ActiveCfg = Debug|ARM
 		{9D670E12-A8FA-47D9-936D-171E366A482E}.Debug|ARM.Build.0 = Debug|ARM
@@ -275,18 +251,42 @@ Global
 		{33AD29A4-0F7D-4477-B54C-5352A1218161}.Release|x64.Build.0 = Debug|Any CPU
 		{33AD29A4-0F7D-4477-B54C-5352A1218161}.Release|x86.ActiveCfg = Debug|Any CPU
 		{33AD29A4-0F7D-4477-B54C-5352A1218161}.Release|x86.Build.0 = Debug|Any CPU
+		{5AD5E201-A8D4-44EB-B96D-EAB8CAAD8148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AD5E201-A8D4-44EB-B96D-EAB8CAAD8148}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AD5E201-A8D4-44EB-B96D-EAB8CAAD8148}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{5AD5E201-A8D4-44EB-B96D-EAB8CAAD8148}.Debug|ARM.Build.0 = Debug|Any CPU
+		{5AD5E201-A8D4-44EB-B96D-EAB8CAAD8148}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{5AD5E201-A8D4-44EB-B96D-EAB8CAAD8148}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{5AD5E201-A8D4-44EB-B96D-EAB8CAAD8148}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{5AD5E201-A8D4-44EB-B96D-EAB8CAAD8148}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{5AD5E201-A8D4-44EB-B96D-EAB8CAAD8148}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5AD5E201-A8D4-44EB-B96D-EAB8CAAD8148}.Debug|x64.Build.0 = Debug|Any CPU
+		{5AD5E201-A8D4-44EB-B96D-EAB8CAAD8148}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5AD5E201-A8D4-44EB-B96D-EAB8CAAD8148}.Debug|x86.Build.0 = Debug|Any CPU
+		{5AD5E201-A8D4-44EB-B96D-EAB8CAAD8148}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AD5E201-A8D4-44EB-B96D-EAB8CAAD8148}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{5AD5E201-A8D4-44EB-B96D-EAB8CAAD8148}.Release|ARM.ActiveCfg = Debug|Any CPU
+		{5AD5E201-A8D4-44EB-B96D-EAB8CAAD8148}.Release|ARM.Build.0 = Debug|Any CPU
+		{5AD5E201-A8D4-44EB-B96D-EAB8CAAD8148}.Release|iPhone.ActiveCfg = Debug|Any CPU
+		{5AD5E201-A8D4-44EB-B96D-EAB8CAAD8148}.Release|iPhone.Build.0 = Debug|Any CPU
+		{5AD5E201-A8D4-44EB-B96D-EAB8CAAD8148}.Release|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{5AD5E201-A8D4-44EB-B96D-EAB8CAAD8148}.Release|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{5AD5E201-A8D4-44EB-B96D-EAB8CAAD8148}.Release|x64.ActiveCfg = Debug|Any CPU
+		{5AD5E201-A8D4-44EB-B96D-EAB8CAAD8148}.Release|x64.Build.0 = Debug|Any CPU
+		{5AD5E201-A8D4-44EB-B96D-EAB8CAAD8148}.Release|x86.ActiveCfg = Debug|Any CPU
+		{5AD5E201-A8D4-44EB-B96D-EAB8CAAD8148}.Release|x86.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{75DDE73C-78F6-4C49-A2F6-232B5E58488D} = {0AF45012-CF13-4B7F-82A4-0213F2D1511A}
-		{E224A143-91F6-44CE-8165-D681E5E8D18A} = {B93C1B0E-57AE-42AE-AA9C-E9621417D4EC}
 		{9D670E12-A8FA-47D9-936D-171E366A482E} = {418B5A1C-0FA5-464D-AE0C-40172D5793F8}
 		{52DF4948-E6A9-4113-99DC-DFB8F8A27E7D} = {418B5A1C-0FA5-464D-AE0C-40172D5793F8}
 		{7CC6B0A6-007B-48F1-8CDE-0EB5E54243BE} = {418B5A1C-0FA5-464D-AE0C-40172D5793F8}
 		{A43DD07E-14F3-46DC-A89A-AD7DC6BC4474} = {418B5A1C-0FA5-464D-AE0C-40172D5793F8}
 		{33AD29A4-0F7D-4477-B54C-5352A1218161} = {B93C1B0E-57AE-42AE-AA9C-E9621417D4EC}
+		{5AD5E201-A8D4-44EB-B96D-EAB8CAAD8148} = {B93C1B0E-57AE-42AE-AA9C-E9621417D4EC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B39F8BEE-05AF-4106-A322-7AFB48DDFB60}

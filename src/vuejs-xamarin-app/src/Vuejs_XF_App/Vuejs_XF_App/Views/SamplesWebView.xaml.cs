@@ -27,5 +27,15 @@ namespace Vuejs_XF_App.Views
             htmlSource.Html = SampleExtensions.GetValueEmbeddedResource(typeof(SamplesWebView).Assembly, path);
             webViewHtmlString.Source = htmlSource;
         }
+
+        private void btSample_Clicked(object sender, EventArgs e)
+        {
+            var path = "Vuejs_XF_App.Resources.page0002.html";
+
+            var htmlSource = new HtmlWebViewSource();
+            htmlSource.BaseUrl = Path.Combine(DependencyService.Get<IBaseUrl>().Get(), "page0002/");
+            htmlSource.Html = SampleExtensions.GetValueEmbeddedResource(typeof(SamplesWebView).Assembly, path);
+            webViewHtmlString.Source = htmlSource;
+        }
     }
 }

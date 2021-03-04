@@ -12,9 +12,11 @@
 
   <ItemGroup>
     <None Remove="Resources\Page0001.html" />
+    <None Remove="Resources\page0002.html" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Resources\page0002.html" />
     <EmbeddedResource Include="Resources\page0001.html" />
   </ItemGroup>
 

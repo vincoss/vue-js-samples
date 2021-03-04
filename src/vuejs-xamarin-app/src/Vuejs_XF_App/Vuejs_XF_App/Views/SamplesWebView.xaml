@@ -6,6 +6,7 @@
 
     <StackLayout>
         <Button x:Name="btnDefaultVueJs" Text="Default Vue.js sample" Clicked="btnDefaultVueJs_Clicked"/>
+        <Button x:Name="btSample" Text="Log error to server" Clicked="btSample_Clicked"/>
         <WebView x:Name="webViewHtmlString" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
                  HeightRequest="1000" WidthRequest="1000"/>
         <Label x:Name="lblError"/>
