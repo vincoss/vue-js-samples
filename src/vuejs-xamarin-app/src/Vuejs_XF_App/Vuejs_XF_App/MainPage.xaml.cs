@@ -19,7 +19,7 @@ namespace Vuejs_XF_App
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            this.Navigation.PushAsync(new AppWebView());
+            this.Navigation.PushAsync(new SamplesWebView());
         }
 
         private async void httpGetValuesTest_Clicked(object sender, EventArgs e)
