@@ -136,12 +136,10 @@
     <Content Include="Assets\wwwroot\page0001\js\about.js" />
     <Content Include="Assets\wwwroot\page0001\js\app.js" />
     <Content Include="Assets\wwwroot\page0001\js\chunk-vendors.js" />
-    <Content Include="Assets\wwwroot\page0002\css\app.d76f86fe.css" />
     <Content Include="Assets\wwwroot\page0002\favicon.ico" />
     <Content Include="Assets\wwwroot\page0002\img\logo.82b9c7a5.png" />
-    <Content Include="Assets\wwwroot\page0002\js\about.3e67289c.js" />
-    <Content Include="Assets\wwwroot\page0002\js\app.6791e0fc.js" />
-    <Content Include="Assets\wwwroot\page0002\js\chunk-vendors.b5644ee6.js" />
+    <Content Include="Assets\wwwroot\page0002\js\app.js" />
+    <Content Include="Assets\wwwroot\page0002\js\chunk-vendors.js" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Readme.txt" />
   </ItemGroup>
@@ -165,11 +163,6 @@
       <Project>{ACAF89D7-B483-46D3-ACDC-C15E881AA340}</Project>
       <Name>Vuejs_XF_App</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\wwwroot\page0002\js\about.3e67289c.js.map" />
-    <None Include="Assets\wwwroot\page0002\js\app.6791e0fc.js.map" />
-    <None Include="Assets\wwwroot\page0002\js\chunk-vendors.b5644ee6.js.map" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

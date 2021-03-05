@@ -21,15 +21,19 @@ namespace VueApi.Controllers
             {
                 return;
             }
+            LogMessage(error.Value);
+        }
 
+        private void LogMessage(string str)
+        {
             var path = @"C:\temp";
             var fileName = "VueApi-Client-Error-Log.txt";
             var fullPath = System.IO.Path.Combine(path, fileName);
-            var message = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss.fffff} {error}";
-           
+            var message = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss.fffff} {str}";
+
             using (var tw = new StreamWriter(fullPath, true))
             {
-                tw.WriteLine(error.Value);
+                tw.WriteLine(message);
             }
         }
     }
@@ -37,6 +41,5 @@ namespace VueApi.Controllers
     public class ErrorModel
     { 
         public string Value { get; set; }
-    }
-    
+    }   
 }

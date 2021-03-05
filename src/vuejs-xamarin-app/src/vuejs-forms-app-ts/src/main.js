@@ -11,29 +11,31 @@ async function captureError(ex) {
     message: ex.line, // e.g. x is undefined
     url: document.location.href,
     stack: ex.stack // stacktrace string; remember, different per-browser!
-    };
+  };
 
-    var message = JSON.stringify(errorData);
-    if (message === "")
-    {
-        message = "Error is missing";
-    }
+  var message = JSON.stringify(errorData);
+  if (message === "") {
+    message = "Error is missing";
+  }
 
-    await axios.post("http://localhost:5000/api/error", { error: message })
-        .then(r => console.log(r.status))
-        .catch(e => console.log(e));
+  await axios
+      .post("http://localhost:5000/api/error", { value: message })
+    .then(r => console.log(r.status))
+    .catch(e => console.log(e));
 }
 
 Vue.config.errorHandler = (err, vm, info) => {
-  console.log("Vue.config.errorHandler");
-  console.log(`Error: ${err.toString()}\nInfo: ${info}`);
+    console.log("Vue.config.errorHandler");
+    console.log(`Error: ${err.toString()}\nInfo: ${info}`);
     captureError(err);
 };
 
-window.onerror = function(message, source, lineno, colno, error) {
-  console.log("window.onerror");
-  console.log("ONE ERROR HANDLER TO RULE THEM ALL:", message);
-  captureError(error);
+window.onerror = function (message, source, lineno, colno, error)
+{
+    console.log("window.onerror");
+    console.log("ONE ERROR HANDLER TO RULE THEM ALL:", message);
+    console.log(`Error: ${error.toString()}`);
+    captureError(error);
 };
 
 new Vue({
