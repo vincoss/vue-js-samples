@@ -5,8 +5,6 @@
              xmlns:xa="clr-namespace:Vuejs_XF_App.Xaml;assembly=Vuejs_XF_App"
              Padding="0,40,0,0">
 
-    <StackLayout>
-        <xa:HybridWebView x:Name="hybridWebView"
+    <xa:HybridWebView x:Name="hybridWebView"
                           Uri="index.html"/>
-    </StackLayout>
 </ContentPage>

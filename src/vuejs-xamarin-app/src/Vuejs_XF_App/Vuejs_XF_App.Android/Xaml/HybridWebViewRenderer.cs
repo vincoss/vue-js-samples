@@ -31,7 +31,7 @@ namespace Vuejs_XF_App.Droid.Xaml
             {
                 Control.SetWebViewClient(new JavascriptWebViewClient(this, $"javascript: {JavascriptFunction}"));
                 Control.AddJavascriptInterface(new JSBridge(this), "jsBridge");
-                Control.LoadUrl($"file:///android_asset/Content/{((HybridWebView)Element).Uri}");
+                Control.LoadUrl($"file:///android_asset/wwwroot/page0003/{((HybridWebView)Element).Uri}");
             }
         }
 

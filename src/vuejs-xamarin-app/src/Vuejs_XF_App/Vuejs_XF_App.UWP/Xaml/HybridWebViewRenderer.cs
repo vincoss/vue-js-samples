@@ -25,7 +25,7 @@ namespace Vuejs_XF_App.UWP.Xaml
             {
                 Control.NavigationCompleted += OnWebViewNavigationCompleted;
                 Control.ScriptNotify += OnWebViewScriptNotify;
-                Control.Source = new Uri($"ms-appx-web:///Content//{((HybridWebView)Element).Uri}");
+                Control.Source = new Uri($"ms-appx-web:///assets//wwwroot//page0003//{((HybridWebView)Element).Uri}");
             }
         }
 
