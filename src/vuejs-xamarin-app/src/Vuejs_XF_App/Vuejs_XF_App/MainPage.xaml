@@ -6,6 +6,7 @@
     <ScrollView>
         <StackLayout>
             <Button Text="Vue.js APP" Clicked="Button_Clicked"/>
+            <Button Text="Vue.js APP Custom WebView" x:Name="btnCustomWebView" Clicked="btnCustomWebView_Clicked" />
             <Button Text="Http - Get Values Test" x:Name="httpGetValuesTest" Clicked="httpGetValuesTest_Clicked"/>
             <Button Text="Https - Get Values Test" x:Name="httpsGetValuesTest" Clicked="httpsGetValuesTest_Clicked"/>
             <Label x:Name="lblInfo"/>

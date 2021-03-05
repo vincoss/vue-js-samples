@@ -60,5 +60,10 @@ namespace Vuejs_XF_App
                 lblInfo.Text = e.ToString();
             }
         }
+
+        private void btnCustomWebView_Clicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new SamplesCustomWebView());
+        }
     }
 }

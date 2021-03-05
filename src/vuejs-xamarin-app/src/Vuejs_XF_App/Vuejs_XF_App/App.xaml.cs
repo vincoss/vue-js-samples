@@ -1,4 +1,5 @@
 ﻿using System;
+using Vuejs_XF_App.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,8 @@ namespace Vuejs_XF_App
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            //  MainPage = new NavigationPage(new MainPage());
+            MainPage = new SamplesCustomWebView();
         }
 
         protected override void OnStart()
