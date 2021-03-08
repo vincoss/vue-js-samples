@@ -66,6 +66,7 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Services\WorkingWithWebview.cs" />
+    <Compile Include="Xaml\HybridWebViewRenderer.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -135,6 +136,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\wwwroot\" />
+    <Content Include="Resources\wwwroot\page0003\index.html" />
   </ItemGroup>
 </Project>
