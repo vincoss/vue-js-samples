@@ -16,7 +16,7 @@ namespace Vuejs_XF_App.iOS.Services
 	{
 		public string Get()
 		{
-			return $"{NSBundle.MainBundle.BundlePath}/page001/";
+			return $"{NSBundle.MainBundle.BundlePath}/wwwroot/";
 		}
 	}
 }
