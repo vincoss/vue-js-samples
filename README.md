@@ -13,3 +13,4 @@ https://jestjs.io/en/
 https://www.npmjs.com/package/json-server
 https://github.com/RicoSuter/NSwag/wiki/NSwagStudio
 https://www.npmjs.com/package/vue-axios
+https://github.com/microsoft/vscode-recipes/tree/main/vuejs-cli
