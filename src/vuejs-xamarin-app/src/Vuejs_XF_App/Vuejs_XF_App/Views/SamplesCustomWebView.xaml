@@ -5,6 +5,14 @@
              xmlns:xa="clr-namespace:Vuejs_XF_App.Xaml;assembly=Vuejs_XF_App"
              Padding="0,40,0,0">
 
-    <xa:HybridWebView x:Name="hybridWebView"
-                          Uri="index.html"/>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <xa:HybridWebView x:Name="hybridWebView" Uri="index.html"/>
+        <Label x:Name="lblError"/>
+
+    </Grid>
 </ContentPage>

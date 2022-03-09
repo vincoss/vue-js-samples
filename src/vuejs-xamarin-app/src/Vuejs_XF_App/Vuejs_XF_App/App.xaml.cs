@@ -11,8 +11,7 @@ namespace Vuejs_XF_App
         {
             InitializeComponent();
 
-            //  MainPage = new NavigationPage(new MainPage());
-            MainPage = new SamplesCustomWebView();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

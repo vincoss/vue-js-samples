@@ -66,9 +66,12 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Services\WorkingWithWebview.cs" />
+    <Compile Include="Xaml\HybridWebViewRenderer.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\wwwroot\page0002\js\app.28e96570.js.map" />
+    <BundleResource Include="Resources\wwwroot\page0002\js\chunk-vendors.53c958d6.js.map" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -135,6 +138,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\wwwroot\" />
+    <BundleResource Include="Resources\wwwroot\page0002\css\app.4248d172.css" />
+    <BundleResource Include="Resources\wwwroot\page0002\css\chunk-vendors.726ffc5a.css" />
+    <BundleResource Include="Resources\wwwroot\page0002\favicon.ico" />
+    <BundleResource Include="Resources\wwwroot\page0002\img\logo.82b9c7a5.png" />
+    <BundleResource Include="Resources\wwwroot\page0002\js\app.28e96570.js" />
+    <BundleResource Include="Resources\wwwroot\page0002\js\chunk-vendors.53c958d6.js" />
+    <Content Include="Resources\wwwroot\page0003\index.html" />
   </ItemGroup>
 </Project>
