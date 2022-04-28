@@ -30,17 +30,45 @@
 
 <script lang="ts">
    
-    import { Component, Vue } from 'vue-property-decorator'
+    import { Component, Vue, Prop, Watch } from 'vue-property-decorator'
+    import axios from "axios";
 
-    export default {
-        name: 'UploadBlazorComponent',
-        data: function () {
+    @Component
+    export default class BlazorView extends Vue {
+
+
+        private fileName: string = "index.html";
+        private input: string = "";
+
+         data() {
             return {
                 fileName: "index.html",
                 input: ""
 
             };
         }
-    }
+
+        mounted() {
+            this.fileName = this.$route.params.fileName;
+            this.loadFile()
+        }
+
+        get compiledHtml() {
+            return this.input;
+        }
+
+        loadFile() {
+            axios({
+                method: "get",
+                url: "/wasm/index.html"
+            })
+                .then(result => {
+                    this.input = result.data;
+                })
+                .catch(error => {
+                    console.error("error getting file");
+                });
+        }
+}
 </script>
 
