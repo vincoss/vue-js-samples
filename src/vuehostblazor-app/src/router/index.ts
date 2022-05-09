@@ -19,8 +19,8 @@ const routes: Array<RouteConfig> = [
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
     },
     {
-        path: "/blazor",
-        name: "blazor",
+        path: "/wasm",
+        name: "wasm",
         // route level code-splitting
         // this generates a separate chunk (About.[hash].js) for this route
         // which is lazy-loaded when the route is visited.

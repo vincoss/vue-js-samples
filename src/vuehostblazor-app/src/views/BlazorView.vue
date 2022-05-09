@@ -2,6 +2,7 @@
     <div>
         <h1>Vue.js host app a blazor app</h1>
         <div v-html="compiledHtml"></div>
+        <div id="appblazor">Loading...</div>
     </div>
 </template>
 
@@ -58,9 +59,13 @@
         }
 
         loadFile() {
+            let recaptchaScript = document.createElement('script')
+            recaptchaScript.setAttribute('src', 'wasm/_framework/blazor.webassembly.js')
+            document.head.appendChild(recaptchaScript)
+
             axios({
                 method: "get",
-                url: "/wasm/index.html"
+                url: "/#/wasm/index.html"
             })
                 .then(result => {
                     this.input = result.data;

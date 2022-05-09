@@ -3,7 +3,7 @@
       <nav>
           <router-link to="/">Home</router-link> |
           <router-link to="/about">About</router-link> |
-          <router-link to="/blazor">Upload</router-link>
+          <router-link to="/wasm">Upload</router-link>
       </nav>
     <router-view/>
   </div>
