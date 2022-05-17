@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31005.135
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32505.426
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{B93C1B0E-57AE-42AE-AA9C-E9621417D4EC}"
 EndProject
@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vuejs_XF_App", "src\Vuejs_X
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "vuejs-default", "src\vuejs-default\", "{33AD29A4-0F7D-4477-B54C-5352A1218161}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_59528"
 		Debug.AspNetCompiler.PhysicalPath = "src\vuejs-default\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59528\"
@@ -44,7 +44,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "vuejs-default", "src\vuejs-
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "vuejs-forms-app-ts", "src\vuejs-forms-app-ts\", "{5AD5E201-A8D4-44EB-B96D-EAB8CAAD8148}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_63423"
 		Debug.AspNetCompiler.PhysicalPath = "src\vuejs-forms-app-ts\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63423\"
