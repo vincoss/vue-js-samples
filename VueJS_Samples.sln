@@ -1,0 +1,133 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32414.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "vue-test-project", "src\vue-test-project\", "{7D061AC8-A5DF-4F84-B124-A296E4511512}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_53656"
+		Debug.AspNetCompiler.PhysicalPath = "src\vue-test-project\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53656\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_53656"
+		Release.AspNetCompiler.PhysicalPath = "src\vue-test-project\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53656\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "53656"
+		SlnRelativePath = "src\vue-test-project\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "First-App", "src\First-App\", "{C7655B18-3385-4AB3-8413-224341833D23}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_53671"
+		Debug.AspNetCompiler.PhysicalPath = "src\First-App\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53671\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_53671"
+		Release.AspNetCompiler.PhysicalPath = "src\First-App\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53671\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "53671"
+		SlnRelativePath = "src\First-App\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "first-vue-library", "src\first-vue-library\", "{00CCF708-F047-4846-A8A8-7ADC6B63C5F5}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_53674"
+		Debug.AspNetCompiler.PhysicalPath = "src\first-vue-library\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53674\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_53674"
+		Release.AspNetCompiler.PhysicalPath = "src\first-vue-library\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53674\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "53674"
+		SlnRelativePath = "src\first-vue-library\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "hello-there", "src\hello-there\", "{1B725378-060A-48AF-9197-BDC1239A10FE}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_54383"
+		Debug.AspNetCompiler.PhysicalPath = "src\hello-there\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54383\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_54383"
+		Release.AspNetCompiler.PhysicalPath = "src\hello-there\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54383\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "54383"
+		SlnRelativePath = "src\hello-there\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "vuehostblazor-app", "src\vuehostblazor-app\", "{2D141EB6-8A00-4861-9FB6-F3BC9A18E0D9}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_55945"
+		Debug.AspNetCompiler.PhysicalPath = "src\vuehostblazor-app\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55945\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_55945"
+		Release.AspNetCompiler.PhysicalPath = "src\vuehostblazor-app\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55945\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "55945"
+		SlnRelativePath = "src\vuehostblazor-app\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D061AC8-A5DF-4F84-B124-A296E4511512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D061AC8-A5DF-4F84-B124-A296E4511512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7655B18-3385-4AB3-8413-224341833D23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7655B18-3385-4AB3-8413-224341833D23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00CCF708-F047-4846-A8A8-7ADC6B63C5F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00CCF708-F047-4846-A8A8-7ADC6B63C5F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B725378-060A-48AF-9197-BDC1239A10FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B725378-060A-48AF-9197-BDC1239A10FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D141EB6-8A00-4861-9FB6-F3BC9A18E0D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D141EB6-8A00-4861-9FB6-F3BC9A18E0D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA999108-13B4-4AEA-BC3C-59416940D418}
+	EndGlobalSection
+EndGlobal
