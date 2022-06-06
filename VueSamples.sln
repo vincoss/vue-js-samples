@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32519.111
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "vueminimalblazor", "src\vueminimalblazor\", "{191652AF-4593-4E6E-ACA4-EEB59F27221E}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_64410"
 		Debug.AspNetCompiler.PhysicalPath = "src\vueminimalblazor\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64410\"
@@ -26,7 +26,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "vueminimalblazor", "src\vue
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "firstlibrary", "src\firstlibrary\", "{0389034D-E0FD-4EA7-82C8-3FC1D8AD86B4}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_53511"
 		Debug.AspNetCompiler.PhysicalPath = "src\firstlibrary\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53511\"
