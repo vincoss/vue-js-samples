@@ -29,6 +29,19 @@ export default class App extends Vue
 
         this.dataContext.data.value = "Data value";
         this.dataContext.definition.value = "Definition value";
+
+        this.dataContext.save = this.onSave;
+        this.dataContext.validate = this.onValidate;
+    }
+
+    onValidate(data: Data)
+    {
+        console.log("parent.onValidate");
+    }
+
+    onSave(data: Data)
+    {
+        console.log("parent.onSave");
     }
 
 }
