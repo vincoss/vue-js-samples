@@ -5,23 +5,27 @@
 </template>
 <script>
     export default {
-        data() {
+        data()
+        {
             return {
                 count: 0
             }
         },
         computed: {
-            times() {
+            times()
+            {
                 return this.count > 1
                     ? 'times'
                     : 'time'
             },
-            text() {
+            text()
+            {
                 return `I have been clicked ${this.count} ${this.times}`
             }
         },
         methods: {
-            increment() {
+            increment()
+            {
                 this.count += 1
             }
         }
