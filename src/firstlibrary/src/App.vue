@@ -1,9 +1,10 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-    <DataContextComponent :model="dataContext"/>
-  </div>
+    <div id="app">
+        <img alt="Vue logo" src="./assets/logo.png">
+        <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+        <DataContextComponent :model="dataContext" />
+        <button @click="onDataEvent">Update data</button>
+    </div>
 </template>
 
 <script lang="ts">
@@ -42,6 +43,12 @@ export default class App extends Vue
     onSave(data: Data)
     {
         console.log("parent.onSave");
+    }
+
+    onDataEvent()
+    {
+        console.log("onDataEvent");
+        this.dataContext.data.value = "Data value update";
     }
 
 }

@@ -31,6 +31,7 @@
         }
 
         @Watch("model", { immediate: true })
+        @Watch("model.data.value", { immediate: true })
         async renderView()
         {
             console.log("renderView");
