@@ -45,6 +45,27 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "firstlibrary", "src\firstli
 		SlnRelativePath = "src\firstlibrary\"
 	EndProjectSection
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "datacontextwrapperlib", "src\datacontextwrapperlib\", "{27982803-3078-4B64-AA65-CC9C5EC4DC05}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_58744"
+		Debug.AspNetCompiler.PhysicalPath = "src\datacontextwrapperlib\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58744\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_58744"
+		Release.AspNetCompiler.PhysicalPath = "src\datacontextwrapperlib\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58744\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "58744"
+		SlnRelativePath = "src\datacontextwrapperlib\"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +75,8 @@ Global
 		{191652AF-4593-4E6E-ACA4-EEB59F27221E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0389034D-E0FD-4EA7-82C8-3FC1D8AD86B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0389034D-E0FD-4EA7-82C8-3FC1D8AD86B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27982803-3078-4B64-AA65-CC9C5EC4DC05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27982803-3078-4B64-AA65-CC9C5EC4DC05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
