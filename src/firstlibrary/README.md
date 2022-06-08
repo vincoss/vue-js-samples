@@ -22,3 +22,9 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Serve component
+vue serve src/components/DataContextComponent.vue
+
+##
+yarn add ../DataContextComponent

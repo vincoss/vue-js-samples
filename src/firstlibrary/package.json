@@ -9,7 +9,7 @@
     "build-lib": "vue-cli-service build --target lib --name dataContextLib src/main.js"
 
   },
-  "main": "./dist/dummylib.common.js",
+  "main": "./dist/dataContextLib.common.js",
   "dependencies": {
     "core-js": "^3.8.3",
     "vue": "^2.6.14",
