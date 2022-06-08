@@ -12,7 +12,7 @@
     import HelloWorld from './components/HelloWorld.vue';
     import DataContextComponent from '@/components/DataContextComponent.vue';
     import { Data, Definition, DataContext } from '@/models/dataView';
-
+  
 @Component({
   components: {
         HelloWorld,

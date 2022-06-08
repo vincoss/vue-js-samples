@@ -9,6 +9,13 @@
     "build-lib": "vue-cli-service build --target lib --name dataContextLib src/main.js"
   },
   "main": "./dist/dataContextLib.common.js",
+  "module": "./dist/dataContextLib.umd.js",
+  "browser": "./dist/dataContextLib.umd.js",
+  "unpkg": "./dist/dataContextLib.umd.min.js",
+  "files": [
+    "dist/*"
+  ],
+
   "dependencies": {
     "core-js": "^3.8.3",
     "vue": "^2.6.14",

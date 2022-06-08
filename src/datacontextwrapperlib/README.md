@@ -22,3 +22,10 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Serve component
+vue serve src/components/DataContextComponent.vue
+
+## Add component from another folder
+cd to destination project 'cd firstlibrary'
+yarn add ../datacontextwrapperlib
