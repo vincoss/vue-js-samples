@@ -66,6 +66,26 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "datacontextwrapperlib", "sr
 		SlnRelativePath = "src\datacontextwrapperlib\"
 	EndProjectSection
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "vue-in-react-library", "..\..\Public\vue.js\vue-in-react-library\", "{0025FB7A-3071-4885-B8EF-30AAEA3CC020}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_62742"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\Public\vue.js\vue-in-react-library\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62742\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_62742"
+		Release.AspNetCompiler.PhysicalPath = "..\..\Public\vue.js\vue-in-react-library\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62742\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "62742"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +97,8 @@ Global
 		{0389034D-E0FD-4EA7-82C8-3FC1D8AD86B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27982803-3078-4B64-AA65-CC9C5EC4DC05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{27982803-3078-4B64-AA65-CC9C5EC4DC05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0025FB7A-3071-4885-B8EF-30AAEA3CC020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0025FB7A-3071-4885-B8EF-30AAEA3CC020}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
