@@ -14,8 +14,11 @@
   "module": "./dist/vue-data-context-component.umd.js",
   "browser": "./dist/vue-data-context-component.umd.js",
   "unpkg": "./dist/vue-data-context-component.umd.min.js",
-  "files": [ "dist/*" ],
+  "files": [
+    "dist/*"
+  ],
   "dependencies": {
+    "axios": "^0.27.2",
     "core-js": "^3.8.3",
     "vue": "^2.6.14",
     "vue-class-component": "^7.2.3",
