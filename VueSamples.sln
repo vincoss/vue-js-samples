@@ -84,6 +84,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "vue-in-react-library", "..\
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "62742"
+		SlnRelativePath = "..\..\Public\vue.js\vue-in-react-library\"
 	EndProjectSection
 EndProject
 Global
