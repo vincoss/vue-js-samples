@@ -47,7 +47,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "firstlibrary", "src\firstli
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "datacontextwrapperlib", "src\datacontextwrapperlib\", "{27982803-3078-4B64-AA65-CC9C5EC4DC05}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_58744"
 		Debug.AspNetCompiler.PhysicalPath = "src\datacontextwrapperlib\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58744\"
@@ -84,12 +84,30 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "vue-in-react-library", "..\
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "62742"
+	EndProjectSection
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_62742"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\Public\vue.js\vue-in-react-library\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62742\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_62742"
+		Release.AspNetCompiler.PhysicalPath = "..\..\Public\vue.js\vue-in-react-library\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62742\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "62742"
 		SlnRelativePath = "..\..\Public\vue.js\vue-in-react-library\"
 	EndProjectSection
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "data-context-component", "src\data-context-component\", "{3ED9176E-A5D2-4A5A-B3C9-1449412BA79E}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_53358"
 		Debug.AspNetCompiler.PhysicalPath = "src\data-context-component\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53358\"
@@ -108,69 +126,6 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "data-context-component", "s
 		SlnRelativePath = "src\data-context-component\"
 	EndProjectSection
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "js-examples", "..\..\Public\vue.js\js-examples\", "{2BD938A2-EBE2-464E-87A8-B365EBD4273F}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_61944"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\Public\vue.js\js-examples\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61944\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_61944"
-		Release.AspNetCompiler.PhysicalPath = "..\..\Public\vue.js\js-examples\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61944\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "61944"
-		SlnRelativePath = "..\..\Public\vue.js\js-examples\"
-	EndProjectSection
-EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "vue-component-library", "..\..\Public\vue.js\vue-component-library\", "{179A5A57-21F9-49BF-802A-CC57B7580A6B}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_50967"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\Public\vue.js\vue-component-library\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50967\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_50967"
-		Release.AspNetCompiler.PhysicalPath = "..\..\Public\vue.js\vue-component-library\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50967\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "50967"
-		SlnRelativePath = "..\..\Public\vue.js\vue-component-library\"
-	EndProjectSection
-EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "vue-from-vue-question", "..\..\Public\vue.js\vue-from-vue-question\", "{40A1D3AA-0259-4316-B092-AD5D5BF944EF}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_49257"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\Public\vue.js\vue-from-vue-question\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49257\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_49257"
-		Release.AspNetCompiler.PhysicalPath = "..\..\Public\vue.js\vue-from-vue-question\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49257\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "49257"
-		SlnRelativePath = "..\..\Public\vue.js\vue-from-vue-question\"
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -186,12 +141,6 @@ Global
 		{0025FB7A-3071-4885-B8EF-30AAEA3CC020}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3ED9176E-A5D2-4A5A-B3C9-1449412BA79E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3ED9176E-A5D2-4A5A-B3C9-1449412BA79E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2BD938A2-EBE2-464E-87A8-B365EBD4273F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2BD938A2-EBE2-464E-87A8-B365EBD4273F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{179A5A57-21F9-49BF-802A-CC57B7580A6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{179A5A57-21F9-49BF-802A-CC57B7580A6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{40A1D3AA-0259-4316-B092-AD5D5BF944EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{40A1D3AA-0259-4316-B092-AD5D5BF944EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
