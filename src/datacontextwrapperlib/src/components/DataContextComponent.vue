@@ -36,8 +36,7 @@
         {
             console.log("renderView");
 
-            if (this.model == null)
-            {
+            if (this.model == null) {
                 console.log("model is null!");
                 return;
             }
