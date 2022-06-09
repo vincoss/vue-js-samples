@@ -1,22 +1,20 @@
 {
-  "name": "datacontextwrapperlib",
+  "name": "vue-data-context-component",
+  "description": "vue-data-context-component test component",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build-lib": "vue-cli-service build --target lib --name dataContextLib src/main.js",
-    "build-lib-dev": "vue-cli-service build --target lib --inline-vue --name dataContextLib src/main.js --mode development"
+    "build-lib": "vue-cli-service build --target lib --name vue-data-context-component ./src/install.js",
+    "build-lib-dev": "vue-cli-service build --target lib --name vue-data-context-component ./src/install.js --mode development"
   },
-  "main": "./dist/dataContextLib.common.js",
-  "module": "./dist/dataContextLib.umd.js",
-  "browser": "./dist/dataContextLib.umd.js",
-  "unpkg": "./dist/dataContextLib.umd.min.js",
-  "files": [
-    "dist/*"
-  ],
-
+  "main": "./dist/vue-data-context-component.common.js",
+  "module": "./dist/vue-data-context-component.umd.js",
+  "browser": "./dist/vue-data-context-component.umd.js",
+  "unpkg": "./dist/vue-data-context-component.umd.min.js",
+  "files": [ "dist/*" ],
   "dependencies": {
     "core-js": "^3.8.3",
     "vue": "^2.6.14",
