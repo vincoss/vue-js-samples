@@ -21,16 +21,19 @@
         onValidate()
         {
             console.log("onValidate");
+            this.model.data.value = "onValidate";
             this.model.validate(this.model.data);
         }
 
         onSave()
         {
             console.log("onSave");
+            this.model.data.value = "onSave";
             this.model.save(this.model.data);
         }
 
         @Watch("model", { immediate: true })
+        @Watch("model.data", { immediate: true })
         @Watch("model.data.value", { immediate: true })
         async renderView()
         {
