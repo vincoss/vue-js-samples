@@ -126,6 +126,69 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "data-context-component", "s
 		SlnRelativePath = "src\data-context-component\"
 	EndProjectSection
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Plexer.Importer.UI", "..\..\..\Dev\plexer\src\Plexer.Importer.UI\", "{84606EDF-0E85-4982-BC6F-6CCF8DD106E6}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57350"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\Dev\plexer\src\Plexer.Importer.UI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57350\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57350"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\Dev\plexer\src\Plexer.Importer.UI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57350\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "57350"
+		SlnRelativePath = "..\..\..\Dev\plexer\src\Plexer.Importer.UI\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "gridsome-tutorial", "..\..\Vue.js\gridsome-tutorial\", "{A626D46F-2798-4A47-BA55-34BCCF10E2A5}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_55658"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\Vue.js\gridsome-tutorial\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55658\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_55658"
+		Release.AspNetCompiler.PhysicalPath = "..\..\Vue.js\gridsome-tutorial\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55658\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "55658"
+		SlnRelativePath = "..\..\Vue.js\gridsome-tutorial\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "plexer-grid", "..\..\..\Dev\plexer-grid\", "{9E5D3429-CA15-4F34-BE2D-AF975E987A71}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_62054"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\Dev\plexer-grid\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62054\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_62054"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\Dev\plexer-grid\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62054\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "62054"
+		SlnRelativePath = "..\..\..\Dev\plexer-grid\"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +204,12 @@ Global
 		{0025FB7A-3071-4885-B8EF-30AAEA3CC020}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3ED9176E-A5D2-4A5A-B3C9-1449412BA79E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3ED9176E-A5D2-4A5A-B3C9-1449412BA79E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84606EDF-0E85-4982-BC6F-6CCF8DD106E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84606EDF-0E85-4982-BC6F-6CCF8DD106E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A626D46F-2798-4A47-BA55-34BCCF10E2A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A626D46F-2798-4A47-BA55-34BCCF10E2A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E5D3429-CA15-4F34-BE2D-AF975E987A71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E5D3429-CA15-4F34-BE2D-AF975E987A71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
